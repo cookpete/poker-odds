@@ -1,6 +1,6 @@
 {
   "name": "poker-odds",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight command line tool for calculating poker hand probabilities",
   "repository": "https://github.com/cookpete/poker-odds",
   "author": "Pete Cook <pete@cookpete.com>",
