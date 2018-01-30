@@ -44,8 +44,6 @@ const start = +new Date()
 const equity = calculateEquity(hands.map(parseCards), parseCards(board), iterations, exhaustive)
 const end = +new Date()
 
-console.log(JSON.stringify(equity, null, 2))
-
 log()
 
 if (board) {
