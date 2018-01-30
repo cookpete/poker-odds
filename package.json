@@ -8,6 +8,9 @@
   "bin": {
     "poker-odds": "lib/bin/poker-odds.js"
   },
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "main": "lib/calculate.js",
   "scripts": {
     "generate-lookup": "babel-node src/bin/generate-lookup.js lookup.json",

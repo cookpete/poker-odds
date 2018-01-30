@@ -3,19 +3,22 @@ import { numericalSort, convertToHex, getStraight } from './utils'
 
 export function rankValues (values) {
   let total = 0
+  let max = 0
   const cardMatches = {}
   for (let i = 0; i !== values.length; i++) {
     cardMatches[values[i]] = 0
     for (let j = 0; j !== values.length; j++) {
       if (i === j) continue // TODO: Could this be i <= j?
-      if (values[i][0] === values[j][0]) {
-        cardMatches[values[i]]++
+      const first = values[i]
+      const second = values[j]
+      if (first === second) {
+        cardMatches[first]++
         total++
+        max = Math.max(cardMatches[first], max)
       }
     }
   }
   const matches = total / 2
-  const max = Math.max(...Object.values(cardMatches))
   const straight = getStraight(dedupe(values)) // Dedupe to match straights like AKKKQJT
   const kickers = convertToHex(values.sort((a, b) => cardMatches[b] - cardMatches[a]))
 

@@ -1,6 +1,7 @@
 # poker-odds
 
 [![Latest npm version](https://img.shields.io/npm/v/poker-odds.svg)](https://www.npmjs.com/package/poker-odds)
+[![Node version required](https://img.shields.io/node/v/poker-odds.svg)](https://www.npmjs.com/package/poker-odds)
 [![Build Status](https://img.shields.io/travis/CookPete/poker-odds/master.svg)](https://travis-ci.org/CookPete/poker-odds)
 [![Test Coverage](https://img.shields.io/codecov/c/github/cookpete/poker-odds.svg)](https://codecov.io/gh/CookPete/poker-odds)
 [![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/ckpt)
