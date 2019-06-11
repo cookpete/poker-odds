@@ -1,4 +1,4 @@
-const HAND_PATTERN = /^[AKQJT2-9.][schd.][AKQJT2-9.][schd.]$/
+const HAND_PATTERN = /^([AKQJT2-9.]|10)[schd.]([AKQJT2-9.]|10)[schd.]$/
 const CONSOLE_COLORS = {
   black: '30',
   red: '31',
